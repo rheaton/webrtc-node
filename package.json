@@ -1,0 +1,23 @@
+{
+  "name": "webrtc-node",
+  "version": "0.0.0",
+  "description": "node for webrtc",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/rheaton/webrtc-node.git"
+  },
+  "author": "Rachel Heaton",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/rheaton/webrtc-node/issues"
+  },
+  "homepage": "https://github.com/rheaton/webrtc-node",
+  "dependencies": {
+    "socket.io": "~0.9.16",
+    "node-static": "~0.7.2"
+  }
+}
