@@ -3,10 +3,13 @@ var nodeStatic = require('node-static');
 var file = new(nodeStatic.Server)();
 
 // adjust to deal with heroku
+var port = process.env.PORT || 2013;
 var app = http.createServer(function(req, res) {
   file.serve(req, res);
-}).listen(process.env.PORT || 2013);
+}).listen(port);
 var io = require('socket.io').listen(app);
+
+console.log("starting on port: ", port);
 
 io.sockets.on('connection', function(socket) {
   // push server log messages to client
